@@ -33,7 +33,6 @@ textarea {
 
 h1 {
     font-size: 44px;
-    font-weight: 900;
 }
 
 p {
@@ -160,4 +159,38 @@ nav ul a:nth-child(4) {
 nav ul a:nth-child(5) {
     border-right: 3px solid var(--color-secundary);
 }
+
+/* Sobre ---------------------------------------------*/
+.about-me {
+    display: flex;
+    padding: 100px;
+}
+
+.about-me .container {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.about-me .container h1 {
+    color: var(--color-secundary);
+    font-weight: 700;
+    margin-bottom: -10px;
+}
+
+.about-me .container p {
+    font-size: 20px;
+}
+
+.about-me .img-container {
+    width: 50%;
+    text-align: center;
+    position: relative;
+}
+  
+.about-me .img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 
