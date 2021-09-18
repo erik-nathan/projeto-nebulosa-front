@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/page-login/assets/css/style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <title>Space Academy - Login</title>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav>
+      <img src="/pag-home/assets/img/SPACEACADEMY.png" alt="logo" />
+      <ul>
+        <a href="/pag-home/index.html">Inicio</a>
+        <a href="#about">Sobre</a>
+        <a href="#trilhas">Trilhas</a>
+        <a href="#contact">Contato</a>
+
+        <a href="#">Login</a>
+        <a href="#">Registrar</a>
+      </ul>
+    </nav>
+    
+    <!-- Form Login -->
+    <main>
+      <div class="form-container">
+        <h2>Login</h2>
+        <form action="">
+           <!-- Name -->
+            <div class="input-field">
+                <input type="text" name="text" id="text" placeholder="Entrar com seu Login">
+                <i data-feather="user"></i>
+                <div class="underline"></div>
+            </div>
+
+            <!-- Password -->
+            <div class="input-field">
+                <input type="password" name="password" id="password" placeholder="Entrar com sua Senha">
+                <i data-feather="lock"></i>
+                <div class="underline"></div>
+            </div>
+
+            <!-- Checkbox -->
+            <div class="input-field">
+                <input type="checkbox" name="checkbox" id="checkbox"> <span>Eu aceito os termos de responsabilidade</span> 
+            </div>
+            
+            <!-- Buttom -->
+            <input type="submit" value="Continuar">
+        </form>
+
+        <div class="social-media">
+          <h3>OU</h3>
+            <div class="icons-svg">
+              <a href="#"><i data-feather="facebook"></i></a>
+              <a href="#"><i data-feather="chrome"></i></a>
+              <a href="#"><i data-feather="linkedin"></i></a>
+            </div>
+        </div>
+      </div>
+
+      <div class="img-container">
+        <img src="/page-login/assets/img/planet.png" alt="img-planet"/>
+      </div>
+
+    </main>
+  
+
+    <script>
+      feather.replace()
+    </script>
+  </body>
+</html>
