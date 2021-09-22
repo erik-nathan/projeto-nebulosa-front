@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/page-login/assets/css/style.css" />
+    <link rel="stylesheet" href="/page-register/assets/css/style.css" />
     <script src="https://unpkg.com/feather-icons"></script>
 
-    <title>Space Academy - Login</title>
+    <title>Space Academy - Registro</title>
   </head>
   <body>
     <!-- NavBar -->
@@ -20,7 +20,7 @@
         <a href="#contact">Contato</a>
 
         <a href="#">Login</a>
-        <a href="#">Registrar</a>
+        <a href="#">Registrar</a> 
       </ul>
     </nav>
     
@@ -29,19 +29,34 @@
       <div class="form-container">
         <h2>Login</h2>
         <form action="">
+
            <!-- Name -->
             <div class="input-field">
-                <input type="text" name="text" id="text" placeholder="Entrar com seu Login">
+                <input type="text" name="text" id="text" placeholder="Digite seu Nome">
+                <i data-feather="user"></i>
+                <div class="underline"></div>
+            </div>
+
+            <!-- Email -->
+            <div class="input-field">
+                <input type="password" name="password" id="password" placeholder="Digite seu Email">
                 <i data-feather="mail"></i>
                 <div class="underline"></div>
             </div>
 
             <!-- Password -->
             <div class="input-field">
-                <input type="password" name="password" id="password" placeholder="Entrar com sua Senha">
-                <i data-feather="lock"></i>
-                <div class="underline"></div>
-            </div>
+              <input type="text" name="text" id="text" placeholder="Digite sua Senha">
+              <i data-feather="lock"></i>
+              <div class="underline"></div>
+          </div>
+
+          <!-- Password -->
+          <div class="input-field">
+              <input type="password" name="password" id="password" placeholder="Confirme sua Senha">
+              <i data-feather="lock"></i>
+              <div class="underline"></div>
+          </div>
 
             <!-- Checkbox -->
             <div class="input-field">
@@ -62,21 +77,12 @@
             </div>
         </div>
       </div>
-
+      
       <!-- Img Planet -->
       <div class="img-container">
         <img src="/page-login/assets/img/planet.png" alt="img-planet"/>
       </div>
-
-      <!-- Registrar -->
-      <div class="register">
-        <div class="text">
-          <h3>Caso não tenha conta, registre aqui!</h3> 
-          <input type="submit" value="Registrar">
-        </div>
-        <p>Esqueceu a senha? <span><a href="#"> Clique aqui!</a></span></p>
-      </div>
-
+      
     </main>
 
     <script>
