@@ -127,17 +127,17 @@ aside .perfil {
 aside .perfil .content-perfil {
     max-height: 80px;
     text-align: left;
-    margin-left: 10px;
+    margin: 0 10px 0 15px;
 }
 
 aside .perfil .content-perfil h3 {
     font-weight: 400;
-    margin: 0 0 2px 0;
 }
 
 aside .perfil .content-perfil p {
     font-size: 0.8em;
     font-weight: 300;
+    margin-top: -4px;
 }
 
 aside .perfil .content-perfil p span {
@@ -147,6 +147,7 @@ aside .perfil .content-perfil p span {
 
 aside .perfil .content-perfil h5 {
     font-weight: 400;
+    margin-top: 0px;
 }
 
 aside .perfil .content-perfil .progress {
@@ -250,7 +251,7 @@ aside .top-five .top-placements .content-perfil .progress .progress-bar{
 /* Right Content */
 
 section#content {
-    padding: 25px 0 0 60px;
+    padding: 25px 0 0 120px;
 }
 
 section#content h1 {
@@ -280,7 +281,7 @@ section#content .cards .card-one {
 
 section#content .cards .card-one img {
     width: 100px;
-    margin: 15px 0 20px 25px;
+    margin: 15px 0 20px 30px;
 }
 
 section#content .cards .card-one p {
@@ -358,7 +359,7 @@ section#content .cards .card-four {
 
 section#content .cards .card-four img {
     width: 105px;
-    margin: 18px 0 30px 25px;
+    margin: 18px 0 30px 40px;
 }
 
 section#content .cards .card-four p {
@@ -370,7 +371,6 @@ section#content .cards .card-four p {
 
 
 /* Cards Bottom --------------------------------------------------- */
-
 section#content .cards-bottom {
     display: flex;
 }
@@ -438,19 +438,6 @@ section#content .cards-bottom .card-visited .content-visited .top-three-text spa
 /*  --------------------------------------------------------------- */
 
 /*  Card Stars ---------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
 section#content .cards-bottom .card-stars {
     background: linear-gradient(180deg, #001122 0%, #033260 65.23%);
     width: 62.5vh;
@@ -459,6 +446,71 @@ section#content .cards-bottom .card-stars {
     border: 1px solid white;
 }
 
+section#content .cards-bottom {
+    display: flex;
+}
+
 section#content .cards-bottom .card-stars {
-    
+    background: linear-gradient(180deg, #001122 0%, #033260 65.23%);
+    width: 62.5vh;
+    height: 32vh;
+    border-radius: 10px;
+    border: 1px solid white;
+    margin-right: 20px;
+    color: var(--color-write);
+    padding: 20px;
+}
+
+section#content .cards-bottom .card-stars p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+section#content .cards-bottom .card-stars .content-stars {
+    display: flex;
+    justify-content: space-between;
+}
+
+section#content .cards-bottom .card-stars .content-stars .top-three {
+    display: flex;
+    align-items: center;
+}
+
+section#content .cards-bottom .card-stars .content-stars .top-three-profile {
+    align-items: center;
+    display: flex;
+    color: var(--color-write);
+    margin: 0 5px 7px 0;
+}
+
+section#content .cards-bottom .card-stars .content-stars .top-three-profile p {
+    font-size: 15px;
+    margin-top: 20%;
+}
+
+section#content .cards-bottom .card-stars .content-stars .top-three-profile img {
+    width: 50px;
+}
+
+section#content .cards-bottom .card-stars .content-stars .top-three-text h3{
+    font-weight: 500;
+    margin-bottom: -5px;
+}
+
+section#content .cards-bottom .card-stars .content-stars .top-three-text .star-cards svg {
+    width: 1.2em;
+    color: var(--color-write);
+}
+
+section#content .cards-bottom .card-stars .content-stars .top-three-text .star-cards span svg {
+    width: 1.4em;
+    color: var(--color-secundary);
+}
+
+section#content .cards-bottom .card-stars .content-stars .top-three-text span {
+    color: var(--color-secundary);
+    font-size: 14px;
+    font-weight: 900
 }
