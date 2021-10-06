@@ -275,8 +275,16 @@ section#content .cards .card-one {
     margin-right: 20px;
     padding: 20px;
     font-family: 'Roboto', sans-serif;
+    cursor: pointer;
 
+    position: relative;
     color: var(--color-write);
+}
+
+section#content .cards .card-one:hover {
+    top:-8px;
+    border-bottom: 8px solid var(--color-write);
+    transition: all 0.3s ease;
 }
 
 section#content .cards .card-one img {
@@ -302,8 +310,17 @@ section#content .cards .card-two {
     margin-right: 20px;
     padding: 20px;
     font-family: 'Roboto', sans-serif;
+    position: relative;
+    cursor: pointer;
+
 
     color: var(--color-write);
+}
+
+section#content .cards .card-two:hover {
+    top:-8px;
+    border-bottom: 8px solid var(--color-write);
+    transition: all 0.3s ease;
 }
 
 section#content .cards .card-two img {
@@ -328,8 +345,17 @@ section#content .cards .card-three {
     margin-right: 20px;
     padding: 20px;
     font-family: 'Roboto', sans-serif;
+    position: relative;
+    cursor: pointer;
+
 
     color: var(--color-write);
+}
+
+section#content .cards .card-three:hover {
+    top:-8px;
+    border-bottom: 8px solid var(--color-write);
+    transition: all 0.3s ease;
 }
 
 section#content .cards .card-three img {
@@ -353,8 +379,16 @@ section#content .cards .card-four {
     border-radius: 10px;
     border: 1px solid white;
     padding: 20px;
+    position: relative;
+    cursor: pointer;
 
     color: var(--color-write);
+}
+
+section#content .cards .card-four:hover {
+    top:-8px;
+    border-bottom: 8px solid var(--color-write);
+    transition: all 0.3s ease;
 }
 
 section#content .cards .card-four img {
