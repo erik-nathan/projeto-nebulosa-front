@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+    :root {
+        --color-primary: #043668;
+        --color-secundary: #056ECF;
+        --color-blue-claro: #1282A2;
+        --color-write: #FEFCFB;
+        --color-bg-opacity: #06274E;
+        --color-footer: #02081F;
+        --color-navbar: #051C39;
+        --color-aside: #062448;
+
+        --menu-height: 65px;
+    }
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #04386B 0%, #0A1128 55.52%) ;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Poppins", sans-serif;
+}
+
+/* nav ---------------------------------------------*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    height: var(--menu-height);
+    background: var(--color-navbar);
+    padding: 0 50px;
+    position: sticky;
+    top: 0;
+    
+    z-index: 99;
+}
+
+nav img {
+    height: 30px;
+}
+
+nav ul .menu-icons{
+    width: 100%;
+    display: flex;
+    justify-content: right;
+}
+
+nav ul .menu-icons a {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--color-write);
+    
+    text-decoration: none;
+    padding: 0 25px;
+    transition: all 300ms ease;
+}
+
+nav ul .menu-icons a svg {
+    display: none;
+}
+
+nav ul .menu-icons a:hover {
+    color: var(--color-secundary);
+    cursor: pointer;
+}
+
+nav ul .menu-icons span {
+    margin-left: 20px;
+    border-right: 3px solid var(--color-secundary);
+}
+
+nav ul .menu-icons svg {
+   height: 30px;
+   width: 30px;
+   color: var(--color-write);
+}
+
+nav ul .menu-icons svg:hover {
+    color: var(--color-secundary);
+    cursor: pointer;
+}
+
+/*  -----------------------------------------------*/
+
+main {
+    height: calc(100vh - var(--menu-height));
+    /* display: flex; */
+}
+
+/* article ---------------------------------------- */
+aside {
+    display: flex;
+    align-items: center;
+    padding: 50px 0px 50px 60px;
+
+    width: 100%;
+    height: 300px;
+    background-color: var(--color-navbar);
+    border-bottom: 8px solid var(--color-write);
+}
+
+aside .text-content {
+    color: var(--color-write);
+}
+
+aside .text-content h1 {
+    font-size: 3em;
+    font-weight: 600;
+}
+
+aside .text-content p {
+    width: 85%;
+    font-weight: 300;
+}
+
+aside .img-content {
+    padding-right: 130px;
+}
+
+/* Trilhas ---------------------- */
+.trilhas {
+    padding: 80px 100px;
+
+    background: linear-gradient(144.92deg, #043667 20.63%, #000C17 79.37%);
+    color: var(--color-write);
+}
+
+.trilhas .financas {
+    margin-bottom: 100px;
+}
+
+.trilhas .tecnologia {
+    margin-bottom: 100px;
+}
+
+.trilhas .administracao {
+    margin-bottom: 100px;
+}
+
+.trilhas h1 {
+    font-size: 3em;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.trilhas .trilhas-cards {
+    display: flex;
+    padding: 0 50px;
+    margin-bottom: 30px;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trilhas .trilhas-cards .cards {
+    position: relative;
+    width: 45vh;
+    height: 60vh;
+    border-radius: 30px;
+    border: 2px solid var(--color-write);
+    background-color: var(--color-navbar );
+}
+
+.trilhas .trilhas-cards .cards img {
+    margin: auto;
+	position: absolute;
+	top: 5.5vh; left: 0; right: 0;
+}
+
+.trilhas .trilhas-cards .cards .text-content {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 20px;
+    border-radius: 0 0 30px 30px;
+    color: #000C17;
+    background: #FEFCFB;
+}
+
+.trilhas .trilhas-cards .cards .text-content h3 {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 100%;
+}
+
+.trilhas .trilhas-cards .cards .text-content p {
+    line-height: 110%;
+    margin-bottom: 15px;
+}
+
+.trilhas .trilhas-cards .cards .text-content button {
+    cursor: pointer;
+    color: var(--color-write);
+    width: 35vh;
+    height: 5vh;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(92.27deg, #043667 0%, #000C17 100%);
+    transition: all 0.3s ease;
+    margin-bottom: 5px;
+}
+
+.trilhas .trilhas-cards .cards .text-content button:hover {
+    letter-spacing: 0.8px;
+    background: none;
+    border: 2px solid var(--color-navbar);
+    color: var(--color-navbar);
+    font-size: 1em;
+    font-weight: 600;
+}
+
+/* Footer ---------------------------- */
+.footer {
+    background: var(--color-footer);
+    text-align: center;
+    padding: 100px 0;
+    color: var(--color-write);
+}
+
+.footer .footer-container {
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.footer .footer-container p span {
+    color: var(--color-primary);
+}
+
+.footer .footer-container p span a{
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.footer .footer-container p span a:hover {
+    color: var(--color-write);
+}
+
+.footer .footer-container .title-footer  {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--color-write);
+}
+
+.footer .footer-container .title-footer span {
+    color: var(--color-secundary);
+    font-size: 30px;
+}
+
+.footer .footer-container h4 {
+    color: var(--color-primary);
+}

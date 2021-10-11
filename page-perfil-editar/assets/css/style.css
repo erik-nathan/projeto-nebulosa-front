@@ -328,6 +328,7 @@ section#content .form-container .edit-name input {
     padding-left: 30px;
     padding-right: 30px;
     border: none;
+    color: var(--color-write);
 }
 
 section#content .form-container .edit-name input::placeholder {
@@ -358,6 +359,7 @@ section#content .form-container .edit-mail input {
     padding-left: 30px;
     padding-right: 30px;
     border: none;
+    color: var(--color-write);
 }
 
 section#content .form-container .edit-mail input::placeholder {
@@ -391,6 +393,7 @@ section#content .form-container .edit-password input {
     padding-left: 30px;
     padding-right: 30px;
     border: none;
+    color: var(--color-write);
 }
 
 section#content .form-container .edit-password input::placeholder {
