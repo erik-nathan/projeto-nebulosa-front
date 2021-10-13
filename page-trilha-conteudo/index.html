@@ -31,7 +31,7 @@
           <h1>Finanças</h1>
           <p>Dar importância às finanças é um processo fundamental. As finanças têm ocupado uma posição cada vez mais estratégica para o negócio da empresa. Isso significa que a responsabilidade da área será muito maior. Manter a conformidade da área é função chave, mas a necessidade de se adaptar as novas mudanças é grande.</p>
           <p> <strong>Créditos das aulas:</strong> <a href="https://www.youtube.com/playlist?list=PLw0wwQUldr2LMkM_CBkg5ftyDXmhrJSqK" target="_blanck"> Click Aqui e você será redirecionado!</a> </p>
-          <button>Reportar Trilha</button>
+          <button class="reportar" onclick="abrirModal()">Reportar Trilha</button>
           <button>Editar Trilha</button>
         </div>
         <div class="img-content">
@@ -129,11 +129,27 @@
       </div>
         
       </section>
-      
 
+      <div id="modal-reporte" class="modal-container">
+        <div class="modal">
+          <h3>Motivo do Reporte</h3>
+          <form>
+            <input type="text" class="input" size="40" placeholder="Digite aqui..."> <br>
+            <input type="button" class="button" value="Cancelar" onclick="fecharModal()">
+            <input type="button" class="button" value="Finalizar Reporte" onclick="fecharModal()">
+          </form>
+        </div>
+      </div>
     </main>
 
     <script>
+      function abrirModal() {
+        document.getElementById('modal-reporte').style.top = "0"
+      }
+      function fecharModal() {
+        document.getElementById('modal-reporte').style.top = "-100%"
+      }
+      
       feather.replace();
     </script>
 
