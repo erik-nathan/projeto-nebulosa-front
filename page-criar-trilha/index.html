@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/page-criar-trilha/assets/css/style.css" />
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <title>Space Academy - Painel</title>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav>
+      <img src="/pag-home/assets/img/SPACEACADEMY.png" alt="logo" />
+      <ul>
+        <div class="menu-icons">
+          <a href="/page-perfil/index.html">Perfil</a>
+          <i data-feather="user"></i>
+          <span></span>
+          <a href="/pag-home/index.html">Sair</a>
+          <i data-feather="log-out"></i>
+        </div>
+      </ul>
+    </nav>
+
+    <!-- Content -->
+    <main>
+      <section id="title">
+        <h1>Crie sua trilha</h1>
+        <p>Crie sua trilha para ajudar na decolagem de outras pessoas, siga o passo a passo abaixo:</p> 
+      </section>  
+
+      <section id="form-content">
+        <div class="form">
+
+          <label for="">Nome da Trilha</label>
+          <input type="text"> 
+
+          <label for="categories">Categoria</label>
+          <input list="categories" name="category" id="category">
+            <datalist id="categories">
+              <option value="Finanças">
+              <option value="Tecnologia">
+              <option value="Administração">
+            </datalist>
+
+          <label>Texto de Apoio</label>
+          <input type="text" class="text-apoio">
+        </div>
+
+        <img src="assets/img/planet.png" alt="imagem planeta">
+      </section>
+
+      <div class="line-header"></div>
+
+      <section id="create-classes">
+        <!-- ---------------------------------------------------- -->
+        <div id="classe-container">
+          <h1>Informações Adicionais - Aula 01</h1>
+          <div class="classes">
+            <div class="form">
+              <label for="">Título do Vídeo</label>
+              <input type="text" placeholder="Aula 01. Título do Vídeo"> 
+
+              <label for="">URL do vídeo</label>
+              <input type="text" placeholder="youtube.com/url-do-vídeo">  
+              
+              <label for="">Descrição do Vídeo</label>
+              <input type="text" class="description"> 
+            </div>
+
+            <div class="btn-image">
+              <img src="assets/img/decolagem.png" alt="imagem de decolagem">
+              <button>Adicionar Aula</button>
+            </div>
+          </div>  
+
+          <div class="line">
+            <i data-feather="plus-circle" onclick="duplicate()"></i>
+          </div>
+        </div>        
+        <!-- ---------------------------------------------------- -->
+      </section>
+    
+      <div class="btn-finalizar">
+        <button>Finalizar Criação da Trilha</button>
+      </div>
+
+    </main>
+    <script>
+      var i = 0;
+
+      function duplicate() {
+        var original = document.getElementById('classe-container' + i);
+        var clone = original.cloneNode(true); // "deep" clone
+        clone.id = "classe-container" + ++i; // there can only be one element with an ID
+        clone.onclick = duplicate; // event handlers are not cloned
+        original.parentNode.appendChild(clone);
+      }
+
+      feather.replace();
+    </script>
+
+  </body>
+</html>
